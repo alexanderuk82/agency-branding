@@ -1,0 +1,37 @@
+.h1 {
+  font-family: $font-heading;
+  font-size: 5.7rem;
+  color: $secundary-color;
+}
+.h2 {
+  font-family: $font-heading;
+  font-size: 4.5rem;
+  &--white {
+    color: #fff;
+  }
+  &--dark {
+    color: $secundary-color;
+  }
+}
+
+#main-color {
+  color: $main-color;
+}
+.paragraph {
+  color: $secundary-color;
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.h3 {
+  font-family: $font-heading;
+  font-size: 3rem;
+  &--white {
+    color: #fff;
+  }
+  &--dark {
+    color: $secundary-color;
+  }
+}

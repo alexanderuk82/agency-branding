@@ -1,0 +1,72 @@
+.btn {
+  padding: 2.2rem 4rem;
+  background: $main-color;
+  text-decoration: none;
+  color: #fff;
+  font-weight: map-get($font-weight, bold);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid $main-color;
+  z-index: 2;
+
+  &::before {
+    content: '';
+    display: block;
+    background-color: rgb(255, 255, 255);
+    height: 8.7rem;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &__black {
+    padding: 2.2rem 4rem;
+    background: $secundary-color;
+    text-decoration: none;
+    color: #fff;
+    font-weight: map-get($font-weight, bold);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid $secundary-color;
+    z-index: 2;
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: rgb(255, 255, 255);
+      height: 8.7rem;
+      width: 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: $secundary-color;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}
+
+#topbar {
+  @media only screen and (min-width: $lg-pc) {
+    position: absolute;
+    right: 51px;
+  }
+}

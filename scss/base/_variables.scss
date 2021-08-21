@@ -1,0 +1,52 @@
+//font to use
+$font-heading: 'Abril Fatface', cursive;
+$font-display: sofia-pro, sans-serif;
+
+$font-weight: (
+  'normal': 400,
+  'bold': 700,
+);
+
+//color to use
+
+$main-color: #f94f4f;
+$secundary-color: #191921;
+$textbody: #46464d;
+
+//grid
+%gridfull {
+  grid-column: 1/-1;
+}
+
+//spaces Padding left
+
+%spaces {
+  padding: 4rem 3.5rem;
+}
+
+.spaces-sizes {
+  padding: 0 3.5rem;
+}
+
+.spaces {
+  @extend %spaces;
+}
+
+.mt-md {
+  margin-top: 5rem;
+}
+.mb-sm {
+  margin-bottom: 1.5rem;
+}
+.mb-md {
+  margin-bottom: 3.5rem;
+}
+
+%paddingSections {
+  padding: 8rem 3.5rem;
+}
+
+//Media queria values
+$xl-pc: 75em;
+$lg-pc: 60.5em;
+$tb-port: 43.75em;

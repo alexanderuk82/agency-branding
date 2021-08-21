@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/rnn2luj.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>App landing page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__top">
+          <img src="images/Logo mobile.svg" alt="" class="header__logo" />
+
+          <a href="#" class="header__menu-icon">
+            <img src="images/hamburger-menu.svg" alt="menu" />
+          </a>
+
+          <nav class="header__nav">
+            <ul class="header__nav__list">
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__links active">Home</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="" class="header__nav__links">About</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="" class="header__nav__links">Contact us</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn__black" id="topbar">Schedulle a Call</a>
+            <a href="#" class="header__nav__close">
+              <img src="images/icon-close.svg" alt="menu" />
+            </a>
+          </nav>
+        </div>
+
+        <div class="header__content">
+          <div class="header__content__left-side">
+            <h1 class="h1">Branding & website design Agency</h1>
+            <p class="paragraph">
+              We specialize in visual storytelling by creating cohesive brand
+              and website design solutions for small business, giving lasting
+              impressions in a digital world.
+            </p>
+            <a href="#main" class="btn center">Learn more</a>
+          </div>
+
+          <div class="header__content__right-side"></div>
+        </div>
+      </header>
+      <main class="main" id="main">
+        <section class="main__design-strategic">
+          <div class="main__design-strategic__text">
+            <h2 class="h2 h2--white">
+              <span id="main-color"> Design is </span>strategic
+            </h2>
+
+            <img
+              src="images/Decoration.svg"
+              alt=""
+              class="main__special-image"
+            />
+            <p class="paragraph paragraph--white mt-md">
+              "A well-crafted design strategy consistently produces desired
+              outcomes and brand awareness. We are firm believers sucess that
+              lies in creative collaboration with our clients."
+            </p>
+            <a href="#" class="btn-underline mt-md">Shedule a Call</a>
+          </div>
+          <picture class="main__design-picture">
+            <source
+              media="(min-width:650px)"
+              srcset="images/design-strategic-desktop@2x.jpg"
+            />
+            <img
+              src="images/Image-design-strategic-mobile@2x.jpg"
+              alt=""
+              style="width: 100%"
+            />
+          </picture>
+        </section>
+
+        <section class="main__approach">
+          <h2 class="h2 h2--dark spaces special">
+            Our approach for creating a winning brand
+          </h2>
+
+          <div class="main__boxes">
+            <!--  Start Box one  -->
+            <div class="main__boxes--box">
+              <span class="main__boxes--bigNumber">01</span>
+              <div class="main__boxes--content">
+                <h3 class="h3 h3--white mb-sm">Brand Strategy</h3>
+                <p class="paragraph paragraph--white">
+                  Brand strategy is critical for long-term sucess. Outshining
+                  competitors and capturing the target
+                </p>
+              </div>
+            </div>
+            <!-- End Box one  -->
+
+            <!--  Start Box two  -->
+            <div class="main__boxes--box">
+              <span class="main__boxes--bigNumber">02</span>
+              <div class="main__boxes--content">
+                <h3 class="h3 h3--white mb-sm">Brand Design</h3>
+                <p class="paragraph paragraph--white">
+                  Keeping the brand design unique and meaningful helps in
+                  communicating the brand's timeless value effectiverly.
+                </p>
+              </div>
+            </div>
+            <!-- End Box two  -->
+
+            <!--  Start Box three  -->
+            <div class="main__boxes--box">
+              <span class="main__boxes--bigNumber">03</span>
+              <div class="main__boxes--content">
+                <h3 class="h3 h3--white mb-sm">Web Design</h3>
+                <p class="paragraph paragraph--white">
+                  A beautifully crafted website is the best tool for brand
+                  awareness, and ultimately results increased revenues.
+                </p>
+              </div>
+            </div>
+            <!-- End Box three  -->
+          </div>
+        </section>
+      </main>
+      <section class="branding">
+        <div class="branding__left">
+          <img
+            src="images/Decoration-white.svg"
+            alt=""
+            class="branding__special-image"
+          />
+          <h2 class="h2 h2--white spaces">Brand Naming & guidelines</h2>
+          <div class="branding__navigator">
+            <img
+              src="images/arrow-left-circle.svg"
+              alt=""
+              class="branding__navigator--left"
+            />
+            <img
+              src="images/arrow-right-circle.svg"
+              alt=""
+              class="branding__navigator--right"
+            />
+          </div>
+        </div>
+
+        <div class="branding__gallery">
+          <div class="branding__gallery__img">
+            <img
+              src="images/Image-project-bran-desktop@2x.jpg"
+              alt=""
+              class="branding__gallery__img branding__gallery__img__image"
+            />
+            <div class="branding__text">
+              <p>
+                <span class="branding__text__title">Lean Product Roadmap</span>
+              </p>
+              <p>2019 Project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <img src="images/twitter-icon.svg" alt="" />
+        <h2 class="h2 spaces-sizes">Let build something great together</h2>
+        <a href="#main" class="btn">Shedule a call</a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

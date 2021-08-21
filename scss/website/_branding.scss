@@ -1,0 +1,71 @@
+.branding {
+  text-align: center;
+
+  @media only screen and (min-width: $lg-pc) {
+    display: grid;
+    grid-template-columns: 42% 1fr;
+  }
+
+  &__special-image {
+    position: absolute;
+    top: 44%;
+    right: -12%;
+    display: none;
+
+    @media only screen and (min-width: $xl-pc) {
+      display: block;
+    }
+  }
+
+  &__left {
+    background-color: $secundary-color;
+    @media only screen and (min-width: $lg-pc) {
+      position: relative;
+      height: 37rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__navigator {
+    padding-bottom: 4rem;
+    img:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+  &__gallery {
+    position: relative;
+    &__img {
+      height: 58vh;
+      position: relative;
+
+      @media only screen and (min-width: $lg-pc) {
+        position: ABSOLUTE;
+        right: 0px;
+        z-index: -1;
+        width: 121%;
+        height: 110%;
+      }
+      &__image {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    text-align: right;
+    &__title {
+      font-weight: map-get($font-weight, bold);
+    }
+  }
+}
